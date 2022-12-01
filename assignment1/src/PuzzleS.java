@@ -1,8 +1,8 @@
-public class Puzzle {
+public class PuzzleS {
 	private char[][][] solution = new char[32][7][7];//the array to store solution
 
 	public static void main(String[] args) {
-		new Puzzle().run();
+		new PuzzleS().run();
 	}
 	private char[][] board;
 	private char[][] start =
@@ -21,7 +21,7 @@ public class Puzzle {
 	private final String[] DIRECTIONS = {"UP", "RIGHT", "DOWN", "LEFT"};
 
 
-	public Puzzle() {
+	public PuzzleS() {
 		this.board = this.copy(this.start);//initialize the board with a start board
 		this.solution[0] = this.copy(this.board);//copy and store the start board
 		this.height = board.length;
@@ -76,7 +76,6 @@ public class Puzzle {
 							moveBack(mov);//backTrack
 						}
 					}
-
 			return false;
 		}
 	}
