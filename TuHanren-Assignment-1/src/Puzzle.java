@@ -50,8 +50,7 @@ public class Puzzle {
 		// print the steps
 		if (pegs == 1 && gameBoard[3][3] == 'X') {
 			for (int i = 0; i < this.solution.length; i++) {
-				int step = i + 1;
-				System.out.println("Steps " + step + ": ");
+				System.out.println("Steps " + i + ": ");
 				this.displayBoard(this.solution[i]);
 			}
 			return true;
